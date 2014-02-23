@@ -1,0 +1,18 @@
+{
+  "name": "drewmiller.net",
+  "version": "0.0.0",
+  "homepage": "https://github.com/itsdrewmiller/drewmiller.net",
+  "authors": [
+    "Drew Miller <drew@drewmiller.net>"
+  ],
+  "description": "My web site",
+  "main": "app.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
