@@ -22,7 +22,7 @@
           <ul class="nav navbar-nav">
             <li ui-sref-active="active"><a ui-sref="about">About Drew</a></li>
             <li ui-sref-active="active"><a ui-sref="projects">Projects</a></li>
-            <li><a>Blog (coming soon)</a></li>
+            <li ui-sref-active="active"><a ui-sref="blog">Blog</a></li>
           </ul>
         </div>
       </div>
@@ -38,9 +38,13 @@
       var djm = angular.module('djm', ['ui.router', 'ui.bootstrap']);
 
       djm.config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/about");
+        $urlRouterProvider.otherwise("/");
 
         $stateProvider
+        .state('home', {
+          url: "/",
+          templateUrl: "partials/home.html"
+        })
         .state('about', {
           url: "/about",
           templateUrl: "partials/about.html"
@@ -48,6 +52,10 @@
         .state('projects', {
           url: "/projects",
           templateUrl: "partials/projects.html"
+        })
+        .state('blog', {
+          url: "/blog",
+          templateUrl: "partials/blog.html"
         });
       });
 
