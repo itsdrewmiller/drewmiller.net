@@ -3,6 +3,8 @@ node_js:
 - '0.10'
 deploy:
   provider: heroku
-  app: drewmiller-net
   api_key:
-    secure: CugaD/8O7bnAkaG+1LpuKY9KSdG2sbEHTud/+BY79SC2dT9RUGVZll3RkTGZ0pYQZjBEnnZsmF8eR7bga1DrUlzWp4IKLL28G0oTaVguFXP8WY7sLzpm/OmIK1amVKepmjkm0pze3QbnnO3+9ZkETnQhiLbvHcLSlK4ZGWYXpWs=
+    secure: OBmxoLT9Ue5iIyKBqV2Z7wl44C/vKIqXg/6f+2iKvKnB+qZvVgPa60vObvVSdM2gFnkbaXeoC98BXdypf7j6v1217uig5nZbbmPUJPVqFHIpYBwTDGlhkQpPpwvISeb7QKf8TH4ZHFuE7cJr+0OcDhXY8Ez9v95rxiysvkz/wsQ=
+  app: drewmiller-net
+  on:
+    repo: itsdrewmiller/drewmiller.net
