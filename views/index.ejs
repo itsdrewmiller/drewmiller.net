@@ -3,13 +3,14 @@
   <head>
     <title>drewmiller.net</title>
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css" />
   </head>
-  <body ng-app>
-    <nav class="navbar navbar-default" role="navigation">
+  <body ng-app="djm">
+    <nav class="navbar navbar-default" role="navigation" ng-controller="NavCtrl">
       <div class="container-fluid">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+          <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed" data-target="#navbar-collapse-main">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -17,17 +18,45 @@
           </button>
           <a class="navbar-brand" href="#">drewmiller.net</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-main">
+        <div collapse="isCollapsed" class="navbar-collapse" id="navbar-collapse-main">
           <ul class="nav navbar-nav">
-            <li><a href="#">About Drew</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="https://medium.com/drewmiller-net-blog">Blog</a></li>
+            <li><a ui-sref="about">About Drew</a></li>
+            <li><a ui-sref="projects">Projects</a></li>
+            <li><a>Blog (coming soon)</a></li>
           </ul>
         </div>
       </div>
     </nav>
+    <div ui-view>
+      <input ng-model="foo" /> {{ foo }}
+    </div>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script>
+      var djm = angular.module('djm', ['ui.router', 'ui.bootstrap']);
+
+      djm.config(function($stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise("/about");
+
+        $stateProvider
+        .state('about', {
+          url: "/about",
+          templateUrl: "partials/about.html"
+        })
+        .state('projects', {
+          url: "/projects",
+          templateUrl: "partials/projects.html"
+        });
+      });
+
+      djm.controller('NavCtrl', function($scope) {
+        $scope.isCollapsed = true;
+      });
+
+    </script>
   </body>
 </html>
