@@ -51,6 +51,11 @@ app.post('/bucky/v1/send', function(req, res) {
 	res.end();
 });
 
+app.get('/boomerang', function(req, res) {
+	// do something with req.params and ES here
+	res.end();
+});
+
 app.all('/*', routes.index);
 
 

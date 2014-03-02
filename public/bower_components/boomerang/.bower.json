@@ -1,0 +1,14 @@
+{
+  "name": "boomerang",
+  "homepage": "https://github.com/bluesmoon/boomerang",
+  "_release": "c075df25b5",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c075df25b59bfdb3707a407aa1e941b662b12145"
+  },
+  "_source": "git://github.com/bluesmoon/boomerang.git",
+  "_target": "*",
+  "_originalSource": "boomerang",
+  "_direct": true
+}
