@@ -20,16 +20,14 @@
         </div>
         <div collapse="isCollapsed" class="navbar-collapse" id="navbar-collapse-main">
           <ul class="nav navbar-nav">
-            <li><a ui-sref="about">About Drew</a></li>
-            <li><a ui-sref="projects">Projects</a></li>
+            <li ui-sref-active="active"><a ui-sref="about">About Drew</a></li>
+            <li ui-sref-active="active"><a ui-sref="projects">Projects</a></li>
             <li><a>Blog (coming soon)</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div ui-view>
-      <input ng-model="foo" /> {{ foo }}
-    </div>
+    <div ui-view></div>
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/bower_components/angular/angular.min.js"></script>
