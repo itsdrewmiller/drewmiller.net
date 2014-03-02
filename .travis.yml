@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  app: drewmiller-net
+  provider: heroku
+  api_key:
+    secure: ZDzEBIJhEsveT4qT7uPs16rxkaRJ6Q8JziZ1P2GfSuIwOxZFL3f0+3ZKUzeEszg/WfEHxSvOM/ycKMMteOZ+ut2cZyqQckQeqrX/vpt1pYvta2kyT2MGtZfkeUW6l/P/IjKMsCG4NVARU/bcqAEZKa/0r5hk/WDotTCPL3x2Jj0=
