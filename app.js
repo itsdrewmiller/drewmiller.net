@@ -20,16 +20,20 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+
+app.use('/js', express.static(__dirname + '/public/js'));
+app.use('/css', express.static(__dirname + '/public/css'));
+app.use('/partials', express.static(__dirname + '/public/partials'));
+app.use('/bower_components', express.static(__dirname + '/public/bower_components'));
+
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+app.all('/*', routes.index);
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
-app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -16,7 +16,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">drewmiller.net</a>
+          <a class="navbar-brand" href="/">drewmiller.net</a>
         </div>
         <div collapse="isCollapsed" class="navbar-collapse" id="navbar-collapse-main">
           <ul class="nav navbar-nav">
@@ -34,35 +34,7 @@
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
     <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-    <script>
-      var djm = angular.module('djm', ['ui.router', 'ui.bootstrap']);
-
-      djm.config(function($stateProvider, $urlRouterProvider) {
-        $urlRouterProvider.otherwise("/");
-
-        $stateProvider
-        .state('home', {
-          url: "/",
-          templateUrl: "partials/home.html"
-        })
-        .state('about', {
-          url: "/about",
-          templateUrl: "partials/about.html"
-        })
-        .state('projects', {
-          url: "/projects",
-          templateUrl: "partials/projects.html"
-        })
-        .state('blog', {
-          url: "/blog",
-          templateUrl: "partials/blog.html"
-        });
-      });
-
-      djm.controller('NavCtrl', function($scope) {
-        $scope.isCollapsed = true;
-      });
-
-    </script>
+    <script src="/bower_components/bucky/bucky.min.js" data-bucky-host="/bucky" data-bucky-page data-bucky-requests></script>
+    <script src="/js/app.js"></script>
   </body>
 </html>

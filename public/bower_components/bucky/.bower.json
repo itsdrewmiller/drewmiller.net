@@ -1,0 +1,15 @@
+{
+  "name": "bucky",
+  "homepage": "https://github.com/HubSpot/BuckyClient",
+  "version": "0.2.3",
+  "_release": "0.2.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.2.3",
+    "commit": "f4a9ff3bff76b83416c746fa89e6b13c16570585"
+  },
+  "_source": "git://github.com/HubSpot/BuckyClient.git",
+  "_target": "~0.2.3",
+  "_originalSource": "bucky",
+  "_direct": true
+}
