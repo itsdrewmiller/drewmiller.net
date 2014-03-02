@@ -2,7 +2,7 @@ language: node_js
 node_js:
 - '0.10'
 deploy:
-  app: drewmiller-net
   provider: heroku
+  app: drewmiller-net
   api_key:
-    secure: ZDzEBIJhEsveT4qT7uPs16rxkaRJ6Q8JziZ1P2GfSuIwOxZFL3f0+3ZKUzeEszg/WfEHxSvOM/ycKMMteOZ+ut2cZyqQckQeqrX/vpt1pYvta2kyT2MGtZfkeUW6l/P/IjKMsCG4NVARU/bcqAEZKa/0r5hk/WDotTCPL3x2Jj0=
+    secure: CugaD/8O7bnAkaG+1LpuKY9KSdG2sbEHTud/+BY79SC2dT9RUGVZll3RkTGZ0pYQZjBEnnZsmF8eR7bga1DrUlzWp4IKLL28G0oTaVguFXP8WY7sLzpm/OmIK1amVKepmjkm0pze3QbnnO3+9ZkETnQhiLbvHcLSlK4ZGWYXpWs=
