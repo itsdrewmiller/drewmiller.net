@@ -6,12 +6,14 @@ This is the code for my [personal home page](http://www.drewmiller.net).
 
 ## Running
 
-1. Get supervisor if you don't have it already.
+1. Get global dependencies if you don't have them already.
 
 		npm install -g supervisor
+		npm install -g bower
 
 2. Then just install and run.
 
+		bower install
 		npm install
 		npm start
 
@@ -28,20 +30,15 @@ This is the code for my [personal home page](http://www.drewmiller.net).
       7. queue.js
 * Platform for blogging
    * Just link to medium?
+* General public presence
 
-## Iterations
-
-### Skeleton
-* Link to projects
-* Link to blog (coming soon?)
-* Images for social network presence
-
-### Projects
-* Just list em
-* Link to github
+## To Do Iterations
 
 ### Unmarried Taxes
-* Make it work
+Make it work.
 
 ### Branch and Bound
-* Make a working example with unmarried taxes
+Make a working example with unmarried taxes.
+
+### Blog
+Make a blog.
