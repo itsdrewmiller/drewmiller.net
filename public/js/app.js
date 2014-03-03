@@ -30,6 +30,10 @@
 
   djm.controller('NavCtrl', function($scope) {
     $scope.isCollapsed = true;
+
+    $scope.collapse = function() {
+      $scope.isCollapsed = true;
+    }
   });
 
 })(angular);

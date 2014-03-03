@@ -2,18 +2,16 @@
 	<p>The following is a more or less complete list of my publicly-available projects that might be of interest to anyone.
 
 	<dl>
-		<dt>unmarried-taxes <a href="https://github.com/itsdrewmiller/unmarried-taxes"><i class="fa fa-github"></i></a><dt>
+		<dt><a href="https://github.com/itsdrewmiller/unmarried-taxes" class="fa fa-github"></a> unmarried-taxes<dt>
 		<dd>This is a tool that allows an unmarried couple with relatively fungible finances to compare and manually optimize their expenses across each return, as well as view how much money they would save or (more likely) lose by doing their taxes as married filing jointly.  It only supports a small subset of the tax code - things that mattered to me, basically.  I made this as a project to explore angular as a framework, so don't look to it as a shining example of perfect code in that respect.</dd>
-		<dt>mortgage-comparer <a href="https://github.com/itsdrewmiller/mortgage-comparer"><i class="fa fa-github"></i></a></dt>
-		<dd></dd>
-		<dt>branchAndBound.js <a href="https://github.com/itsdrewmiller/branchAndBound.js"><i class="fa fa-github"></i></a></dt>
-		<dd></dd>
-		<dt>angular-perfect-scrollbar <a href="https://github.com/itsdrewmiller/angular-perfect-scrollbar"><i class="fa fa-github"></i></a></dt>
-		<dd></dd>
-		<dt>irv-cascade <a href="https://github.com/itsdrewmiller/irv-cascade"><i class="fa fa-github"></i></a></dt>
-		<dd></dd>
-		<dt>hacktive-directathon <a href="https://github.com/itsdrewmiller/hacktive-directathon"><i class="fa fa-github"></i></a></dt>
-		<dd></dd>
+		<dt><a href="https://github.com/itsdrewmiller/mortgage-comparer" class="fa fa-github"></a> mortgage-comparer</dt>
+		<dd>This tool could be more user friendly, but serves its purpose in making it easy to compare the net present value of different mortgage options.  The thing about mortgages is that depending on the configuration, they might be a good deal up front but get worse over time, or suck up front but become good deals once you've enjoyed a low interest rate for many years.  This app lets you put in the different parameters that matter and then look at the year-by-year value of the mortgage.  It will bold your best option in any given year, letting you decide among several options, or in my case choose not to refinance despite tantalizingly low rates.  This was also my first and only <a href="http://knockoutjs.com/">Knockout</a> application, and I think my first major real javascript-heavy application of any kind.  Could have been worse!  Knockout is obviously a relic of history at this point, but I credit it for getting me excited about two-way model binding and js routing through its <a href="http://learn.knockoutjs.com">AMAZING tutorials</a>.</dd>
+		<dt><a href="https://github.com/itsdrewmiller/angular-perfect-scrollbar" class="fa fa-github"></a> angular-perfect-scrollbar</dt>
+		<dd>This is my most popular github repo, with a fat 12 stars at the time of this writing and even a second contributor.  It's just a little directive to make angular play nicely with a very sexy and modestly-named library called <a href="https://github.com/noraesae/perfect-scrollbar">perfect-scrollbar</a>.</dd>
+		<dt><a href="https://github.com/itsdrewmiller/branchAndBound.js" class="fa fa-github"></a> branchAndBound.js</dt>
+		<dd>This should be my most popular github repo - it's an optimization engine, people!  Don't any of you do any maths?  I wrote this because I wanted to find the actual best distribution of deductions for my and my fiance's taxes, which is a harder problem than it sounds.  The formulas involved are non-linear and even discontinuous (based on whether you can legally claim head of household, for example), so most of the linear programming solutions go right out the window.  <a href="http://en.wikipedia.org/wiki/Branch_and_bound">Branch and bound</a> is a recursive strategy that doesn't have any problem with those types of systems, as long as you can come up with a reasonable upper and lower bound.  I could.  I had to implement a somewhat-more optimized queue data structure for this rather than using a basic array, because the number of iterations gets a little too high to use default array operators.</dd>
+		<dt><a href="https://github.com/itsdrewmiller/irv-cascade" class="fa fa-github"></a> irv-cascade</dt>
+		<dd>This is my first test-driven design application - it's a mechanism for calculating the winner of several elections using Instant Runoff Voting, with victors ineligible to win subsequent elections.  I wrote it for our first hackathon, but didn't get the whole site done in time to actually use it.  I did learn that Instant Runoff Voting isn't the end all be all of <a href="http://en.wikipedia.org/wiki/Voting_system#Compliance_of_selected_systems_.28table.29">ridiculous voting schemes</a>.  I think the test-driven approach was really helpful here; my initial data model was really overwrought, and by focusing on small, testable pieces of functionality bit by bit I was able to get it to a place where the API was cleaner and the model simpler than the original design.</dd>
 	</dl>
 
 </div>
