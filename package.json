@@ -9,5 +9,12 @@
     "express": "3.4.8",
     "ejs": "*",
     "elasticsearch": "^1.5.9"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.2",
+    "grunt-contrib-jshint": "^0.8.0"
+  },
+  "scripts": {
+    "test": "grunt"
   }
 }

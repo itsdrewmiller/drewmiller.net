@@ -33,7 +33,7 @@
 
     $scope.collapse = function() {
       $scope.isCollapsed = true;
-    }
+    };
   });
 
 })(angular);
