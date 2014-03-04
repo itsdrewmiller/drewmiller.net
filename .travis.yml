@@ -10,7 +10,7 @@ before_script:
   - ./node_modules/protractor/bin/webdriver-manager start &
   - sleep 8
   - node app.js &
-v  - sleep 8
+  - sleep 8
 deploy:
   provider: heroku
   api_key:
