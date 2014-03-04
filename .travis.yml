@@ -1,12 +1,18 @@
 language: node_js
 node_js:
   - '0.10'
+
 before_script:
-  - npm install -g grunt-cli
-  - ./node_modules/protractor/bin/webdriver-manager update
-  - ./node_modules/protractor/bin/webdriver-manager start &
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
+  - npm install -g protractor supervisor grunt-cli
+  - npm start > /dev/null &
+  - sleep 1 # give server time to start
+
+script:
+  - webdriver-manager update
+  - protractor config/spec-e2e.js
+
 deploy:
   provider: heroku
   api_key:
