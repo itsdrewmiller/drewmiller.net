@@ -9,8 +9,10 @@ before_script:
 
 script:
   - webdriver-manager update
+  - webdriver-manager start &
+  - node app.js &
   - sleep 5
-  - grunt
+  - grunt protractor
 
 deploy:
   provider: heroku
