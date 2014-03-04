@@ -6,13 +6,11 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - npm install -g protractor supervisor grunt-cli
-  - sleep 1 # give server time to start
 
 script:
   - webdriver-manager update
   - webdriver-manager start &
   - sleep 5
-  - protractor config/spec-e2e.js
 
 deploy:
   provider: heroku
