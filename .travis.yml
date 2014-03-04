@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - '0.10'
-before_install:
+before_script:
   - npm install -g grunt-cli
   - ./node_modules/protractor/bin/webdriver-manager update
   - export DISPLAY=:99.0
