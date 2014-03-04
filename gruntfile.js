@@ -22,20 +22,14 @@ module.exports = function(grunt) {
   
   grunt.registerTask('test', function() {
 
-    var selenium = grunt.util.spawn({
+    grunt.util.spawn({
       cmd: 'webdriver-manager',
       args: ['start']
     });
-    process.on('exit', function () {
-      selenium.kill();
-    });
 
-    var node = grunt.util.spawn({
+    grunt.util.spawn({
       cmd: 'node',
       args: ['app.js']
-    });
-    process.on('exit', function () {
-      node.kill();
     });
 
     grunt.task.run('protractor');
