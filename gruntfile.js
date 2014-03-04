@@ -20,22 +20,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-protractor-runner');
   
-  grunt.registerTask('test', function() {
-
-    grunt.util.spawn({
-      cmd: 'webdriver-manager',
-      args: ['start']
-    });
-
-    grunt.util.spawn({
-      cmd: 'node',
-      args: ['app.js']
-    });
-
-    grunt.task.run('protractor');
-
-  });
-
-  grunt.registerTask('default', ['jshint', 'test']);
+  grunt.registerTask('default', ['jshint', 'protractor']);
 
 };
