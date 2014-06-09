@@ -16,7 +16,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: mWzYJHRD0QFoRHTGa0mKo/UeVOE1tc7tAKCmoo/TWAcahFJvrbub5FHLgkBARC+kfqg6EEO3mlUHv48dTA9yR51/pQjOE7XTOD7KFniaNGDwW5XDZn1o+ib/cVjIt7empVMuUzvM7g4MQZnpgX9ZZZCjh0BSUaQBiHicWLBZNSQ=
+    secure: HIfn2fG3wMzY9dfarwXSKVGW0y+duhLEgVwT3LQlA13JvmjsdEGI0nf2tjeJdTdtXDK9BhMFHZxB4kZTlXhfwOn1m65At4IjAWduKlxqTt30LC9QzzpEZ6Sa6DSao/7YGedfi/TZAIypYhksEmP1Y4XZXPKITsWx/yOeKUgRXU4=
   app: drewmiller-net
   on:
     repo: itsdrewmiller/drewmiller.net
