@@ -9,7 +9,6 @@ before_script:
 - npm install -g -q protractor supervisor gulp
 script:
 - webdriver-manager update
-- webdriver-manager start &
 - npm start &
 - sleep 5
 - npm test

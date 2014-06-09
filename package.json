@@ -11,13 +11,8 @@
     "elasticsearch": "^1.5.9"
   },
   "devDependencies": {
-    "grunt": "^0.4.2",
-    "grunt-contrib-jshint": "^0.8.0",
-    "protractor": "^0.24.0",
-    "grunt-protractor-runner": "^0.2.3",
     "gulp": "^3.7.0",
     "gulp-jshint": "^1.6.2",
-    "jshint-stylish": "^0.2.0",
     "gulp-protractor": "0.0.7"
   },
   "scripts": {

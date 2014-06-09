@@ -2,12 +2,11 @@ var gulp = require('gulp');
 var protractor = require('gulp-protractor').protractor;
 
 var jshint = require('gulp-jshint');
-var stylish = require('jshint-stylish');
 
 gulp.task('lint', function() {
 	return gulp.src(['*.js', 'js/*.js'])
 		.pipe(jshint())
-		.pipe(jshint.reporter(stylish));
+		.pipe(jshint.reporter('default'));
 });
 
 gulp.task('protractor', function() {
