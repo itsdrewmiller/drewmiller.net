@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/itsdrewmiller
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.drewmiller.net
+  * I am itsdrewmiller (https://keybase.io/itsdrewmiller) on keybase.
+  * I have a public key with fingerprint 055E 28D4 06DC 98D4 A4EF  9FFD 8B72 D2A2 4403 C120
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "055e28d406dc98d4a4ef9ffd8b72d2a24403c120",
+            "host": "keybase.io",
+            "key_id": "8b72d2a24403c120",
+            "uid": "3eba35dffccfc8b8c0fce6922135a700",
+            "username": "itsdrewmiller"
+        },
+        "revoke": {
+            "sig_ids": [
+                "7b1ffcf6ebb3326f7b801d03daffe78fe60d715ffaa119179541894a9d3911e00f"
+            ]
+        },
+        "service": {
+            "hostname": "www.drewmiller.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1405608828,
+    "expire_in": 157680000,
+    "prev": "f8e241d48559566c3f747b2502b189abc19ea1211de3094d624b3b7c0af16376",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.23
+Comment: https://keybase.io/crypto
+
+yMI7AnicbZJtSGRVGMdnNvNlWNkFDSZj2jq7m0Gm59yXc++ddiEK2qRAtJRejOmc
+e87Ry4z3TvdeZ9qmBTeKoMVqa7eNwjSK3v2gKGWZjVkoSQT5oT5YRhMIW6ZBL1Jh
+nhmMvnS/PNzz/J/f//8czif1l0Ri0aFvx1aKXReuiy7P3zUYuWOx9HABUI+dBMkC
+SPNKEY7bx/2s77ghSAKo61wxmQYxsy1ZicaFJQQzqaEwhSiaBlUbKRC0gH4vKE9I
+DCUBb3U8eSZ/Ug6Tp/+jH6w0VE6JqjMhbFvYJjVtKGyOLUVBqk4MWBEG3HfJAJdq
+JwyYz/MDTibDfXCqBfg856VlpwACp09aBSB5LzAokjyBOaWqqmBhUBMiBlVGhOCG
+KTiGzEC6EIQgZCHD0jVkWhqxmGohxCEU4D7JlrY5x67Ay7vtRcjn863/ZWh1eSgj
+Zn0v9GwvI/v9YZhNlqOFJ7MVPaepPVKKOi6T1ysHctwPHM8FSSSVduiU0UiDOoam
+qZgtgD+YdXyecsoK3cAmlF/ZhuckUphc0RDTTF23dIxtVRiaQRUdKlTuQaiNLE6Q
+ghDjKrQ0hhWNqtSwIREIqwaW/gF/wPVAUpMxSZ9EyttzSTjoc3Dq42JvVSQai1Rf
+uq/8QCKxuoP/Ppvj07WR8Xxd+r13OqNvxZc2uqdzman2tr8WZs+dnhu/tTb98xfb
+ZzrOt/1osJGn4t8frJqqJ4cnz3pjj22OnrhmqAdPFp9c7dFe+ObQ6fnOpZrRmdWn
+r2e+sx40XXZVw6MTB048cfsNc7GuX41k959rb77rxy/svLj1d7xaNCT6P9OWEltH
+bzkw/KGC7MbXCjUNxZufHRk+0n5F877e82cywnqjZn2i5I/WfXkuPvMQXnzlj/X2
+95/5YdZvTHy+8NHlj7+93RQV9j/33L+5dnV49ugvv5U+ePm756/duO3GknH3sZ8u
+Dl38en93J3wEF2/6feXTnQ4/8RL+6tXm4dcPH+nAy89deejYALzzePUuSW4wjQ==
+=d9Rz
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/itsdrewmiller
+
+==================================================================
