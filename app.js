@@ -40,6 +40,7 @@ app.use(express.urlencoded());
 app.use(express.methodOverride());
 
 app.use('/js', express.static(__dirname + '/public/js'));
+app.use('/.well-known', express.static(__dirname + '/public/.well-known'));
 app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/images', express.static(__dirname + '/public/images'));
 app.use('/partials', express.static(__dirname + '/public/partials'));
