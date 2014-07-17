@@ -1,8 +1,11 @@
 # drewmiller.net
 
+![Build Status](https://travis-ci.org/itsdrewmiller/drewmiller.net.svg?branch=master)
+
 ## Description
 
 This is the code for my [personal home page](http://www.drewmiller.net).
+
 
 ## Running
 
