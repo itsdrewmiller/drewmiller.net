@@ -45,6 +45,7 @@ app.use('/css', express.static(__dirname + '/public/css'));
 app.use('/images', express.static(__dirname + '/public/images'));
 app.use('/partials', express.static(__dirname + '/public/partials'));
 app.use('/bower_components', express.static(__dirname + '/public/bower_components'));
+app.use('/pages', express.static(__dirname + '/public/pages'));
 app.use('/submodules', express.static(__dirname + '/submodules'));
 
 app.use(app.router);
