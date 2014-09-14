@@ -37,9 +37,6 @@ This is the code for my [personal home page](http://www.drewmiller.net).
 
 ## To Do Iterations
 
-### Unmarried Taxes
-Make it work.
-
 ### Branch and Bound
 Make a working example with unmarried taxes.
 
