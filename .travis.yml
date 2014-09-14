@@ -10,6 +10,8 @@ before_script:
 script:
 - webdriver-manager update
 - npm start &
+- sleep 5
+- npm test
 deploy:
   provider: heroku
   api_key:
