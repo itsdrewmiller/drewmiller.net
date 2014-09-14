@@ -16,7 +16,7 @@
     "gulp-protractor": "0.0.7"
   },
   "scripts": {
-    "start": "supervisor app.js",
+    "start": "node app.js",
     "test": "gulp"
   }
 }

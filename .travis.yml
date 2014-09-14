@@ -6,7 +6,7 @@ before_install:
 before_script:
 - export DISPLAY=:99.0
 - sh -e /etc/init.d/xvfb start
-- npm install -g -q protractor supervisor gulp
+- npm install -g -q protractor gulp
 script:
 - webdriver-manager update
 - npm start &
