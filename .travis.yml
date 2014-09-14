@@ -19,3 +19,5 @@ deploy:
   app: drewmiller-net
   on:
     repo: itsdrewmiller/drewmiller.net
+env:
+  SELENIUM_JAR: /home/travis/.nvm/v0.10.31/lib/node_modules/protractor/selenium/selenium-server-standalone-2.42.2.jar
