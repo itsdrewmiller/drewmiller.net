@@ -25,12 +25,13 @@ This is the code for my [personal home page](http://www.drewmiller.net).
 * Highlight my development projects
    * Interactive where possible
       1. unmarried-taxes
-      2. mortgage-comparer
-      3. branchAndBound.js
-      4. angular-perfect-scrollbar
-      5. irv-cascade
-      6. hacktive-directathon
-      7. queue.js
+      2. caucus-calculator
+      3. mortgage-comparer
+      4. branchAndBound.js
+      5. angular-perfect-scrollbar
+      6. irv-cascade
+      7. hacktive-directathon
+      8. queue.js
 * Platform for blogging
    * Just link to medium?
 * General public presence
