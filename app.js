@@ -8,12 +8,6 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-var elasticsearch = require('elasticsearch');
-
-var es = new elasticsearch.Client({
-  host: process.env.BONSAI_URL,
-  log: 'trace'
-});
 
 var app = express();
 
@@ -60,57 +54,12 @@ app.get('/boomerang', function(req, res) {
 	res.end();
 });
 
-app.get('/api/blog', function(req, res) {
-  // get all blog posts
-  var page = parseInt(req.query.page);
-  if (page < 1) { page = 1; }
-  var perPage = 25;
-
-  es.search({
-    index: 'blog',
-    type: 'post',
-    from: 0,
-    size: perPage
-  }, function(err, posts) {
-    res.send(posts);
-  });
-});
-
-app.get('/api/blog/:postId', function(req, res) {
-  // get one blog post
-  es.get({
-    index: 'blog',
-    type: 'post',
-    id: req.params.postId
-  }, function(err, post) {
-    res.send(post);
-  });
-});
-
-app.post('/api/blog/:postId/comment', function(req, res) {
-  // add a comment
-  // looks like bonsai is currently refusing dynamic scripting
-  // so might need some janky way of doing this
-  // or maybe parent/child will cover it?
-});
-
-app.post('/api/blog', function(req, res) {
-  res.send(401, 'Maybe we will allow this someday');
-  // es.create({
-  //   index: 'blog',
-  //   type: 'post',
-  //   body: req.body
-  // });
-});
-
 app.all('/*', routes.index);
-
 
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
