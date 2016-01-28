@@ -19,4 +19,4 @@ gulp.task('protractor', function() {
     ).on('error', function(e) { throw e; });
 });
 
-gulp.task('default', ['lint','protractor']);
+gulp.task('default', ['lint']);
