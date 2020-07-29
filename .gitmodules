@@ -4,3 +4,6 @@
 [submodule "submodules/caucus-calculator"]
 	path = submodules/caucus-calculator
 	url = https://github.com/itsdrewmiller/caucus-calculator.git
+[submodule "submodules/mortgage-comparer"]
+	path = submodules/mortgage-comparer
+	url = https://github.com/itsdrewmiller/mortgage-comparer.git
